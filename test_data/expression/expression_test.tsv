@@ -1,0 +1,4 @@
+gene_id	petal_1	petal_2	leaf_1	leaf_2	GO_annotation	KEGG
+target_hit_1	100	110	5	4	chlorophyll biosynthesis	ko00195
+target_hit_2	60	55	20	18	stress response	ko04075
+other_gene_x	2	3	50	48	misc	ko00000

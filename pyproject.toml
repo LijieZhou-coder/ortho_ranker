@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ortho_ranker"
+version = "0.1.0"
+description = "A high-precision homolog screening and candidate prioritization tool for plant comparative genomics."
+readme = "README.md"
+authors = [
+    { name = "Lijie Zhou" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "typer",
+    "pyyaml",
+    "biopython",
+]
+
+[project.scripts]
+ortho-ranker = "ortho_ranker.cli:main"
+
+[tool.setuptools]
+packages = ["ortho_ranker"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]

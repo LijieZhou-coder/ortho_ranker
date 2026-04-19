@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "reference_no_valid_hit_db",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "test_data/no_valid_hit/reference_no_valid_hit.fa",
+  "number-of-letters": 86,
+  "number-of-sequences": 3,
+  "last-updated": "2026-04-18T18:50:00",
+  "number-of-volumes": 1,
+  "bytes-total": 37435,
+  "bytes-to-cache": 266,
+  "files": [
+    "reference_no_valid_hit_db.pdb",
+    "reference_no_valid_hit_db.phr",
+    "reference_no_valid_hit_db.pin",
+    "reference_no_valid_hit_db.pot",
+    "reference_no_valid_hit_db.psq",
+    "reference_no_valid_hit_db.ptf",
+    "reference_no_valid_hit_db.pto"
+  ]
+}

@@ -1,0 +1,53 @@
+project:
+  name: test_case
+  mode: strict
+  goal: high_precision
+  allow_no_unique_hit: true
+  return_single_best_only_if_unique: true
+
+paths:
+  query_fasta: /path/to/query.fa
+
+  target_proteome: /path/to/chrysanthemum_proteins.fa
+  target_blastdb_prefix: /path/to/blastdb/chrysanthemum_pep
+
+  reference_proteome: /path/to/arabidopsis_proteins.fa
+  reference_blastdb_prefix: /path/to/blastdb/arabidopsis_pep
+
+  pfam_db: /path/to/Pfam-A.hmm
+  output_dir: ./results/test_case
+
+thresholds:
+  evalue_cutoff: 1e-20
+  query_cov_cutoff: 0.70
+  subject_cov_cutoff: 0.70
+  top1_ratio_cutoff: 0.90
+  breakpoint_drop_cutoff: 0.10
+  breakpoint_median_multiplier: 2.0
+  reciprocal_top_gap_cutoff: 0.05
+  max_hits_to_keep: 10
+
+domain:
+  require_core_domain: true
+  require_domain_architecture_match: true
+  allow_domain_partial_for_single_best: false
+
+family:
+  mode: simple
+  rationale: initial manual setting
+
+expression:
+  enabled: false
+  matrix_file: test_data/expression/expression_test.tsv
+  gene_id_column: gene_id
+  expression_metric: FPKM
+  target_samples:
+    - petal_1
+    - petal_2
+  background_samples:
+    - leaf_1
+    - leaf_2
+  ranking_strategy: combined
+  min_expression_threshold: 0.0
+  include_no_valid_hit: true
+  pseudocount: 1.0
