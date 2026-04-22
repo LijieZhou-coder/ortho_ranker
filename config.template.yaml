@@ -21,6 +21,8 @@ thresholds:
   evalue_cutoff: 1e-20
   query_cov_cutoff: 0.70
   subject_cov_cutoff: 0.70
+  reciprocal_query_cov_cutoff: 0.70
+  reciprocal_subject_cov_cutoff: 0.70
   top1_ratio_cutoff: 0.90
   breakpoint_drop_cutoff: 0.10
   breakpoint_median_multiplier: 2.0
